@@ -1,0 +1,28 @@
+.dashboard {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.dashboard h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.dashboard p {
+  margin-top: 15px;
+  color: #666;
+}
+
+.dashboard h3 {
+  margin-top: 10px;
+  color: #ff4d4d;
+}
+.location-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 20px;
+  background: #ff4d4d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}

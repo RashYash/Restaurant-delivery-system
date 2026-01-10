@@ -1,0 +1,89 @@
+/* Glass-effect container for login form */
+.auth-container {
+  width: 350px;
+  max-width: 90%;
+  margin: 80px auto;
+  padding: 35px 30px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent glass */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+  color: #ffd700; /* gold text accent */
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Heading */
+.auth-container h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Input fields - full width */
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 215, 0, 0.5); /* gold border */
+  background: rgba(255, 255, 255, 0.05); /* slightly transparent black */
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* ensures width is correct */
+}
+
+.auth-container input::placeholder {
+  color: rgba(255, 215, 0, 0.7); /* gold placeholder */
+}
+
+.auth-container input:focus {
+  border-color: #ffd700; /* gold highlight */
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons - same width as inputs */
+.primary-btn,
+.google-btn {
+  width: 100%; /* matches input width */
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* match width correctly */
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Gold primary login button */
+.primary-btn {
+  background: linear-gradient(90deg, #ffd700, #bfa029); /* gold shades */
+  border: none;
+  color: #0a0a1a; /* dark text on gold */
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+}
+
+.primary-btn:hover {
+  background: linear-gradient(90deg, #bfa029, #ffd700);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 215, 0, 0.7);
+}
+
+/* Gold Google button */
+.google-btn {
+  background: linear-gradient(90deg, #bfa029, #ffd700);
+  color: #0a0a1a; /* dark text */
+  border: none;
+  box-shadow: 0 4px 15px rgba(189, 158, 49, 0.5);
+}
+
+.google-btn:hover {
+  background: linear-gradient(90deg, #ffd700, #bfa029);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(189, 158, 49, 0.7);
+}

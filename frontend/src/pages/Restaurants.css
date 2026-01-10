@@ -1,0 +1,102 @@
+.restaurant-page {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.restaurant-carousel {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.restaurant-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.restaurant-carousel::-webkit-scrollbar-thumb {
+  background: #ffd700; /* gold scrollbar */
+  border-radius: 10px;
+}
+
+.restaurant-card {
+  min-width: 250px; /* fixed width for carousel */
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.6); /* dark glass effect */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  color: #ffd700; /* gold text */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 1);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 12px;
+}
+
+.restaurant-card h3 {
+  margin: 8px 0;
+  font-size: 1.2rem;
+}
+
+.restaurant-card p {
+  font-size: 0.9rem;
+  color: #eee;
+  margin-bottom: 8px;
+}
+
+.menu-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: linear-gradient(90deg, #ffd700, #bfa029);
+  color: #0a0a1a;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+  background: linear-gradient(90deg, #bfa029, #ffd700);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(189, 158, 49, 0.7);
+}
+.arrow {
+  position: absolute;
+  top: 40%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffd700;
+  border: none;
+  font-size: 2rem;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow {
+  left: -20px;
+}
+
+.right-arrow {
+  right: -20px;
+}

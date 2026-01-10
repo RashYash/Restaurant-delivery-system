@@ -1,0 +1,29 @@
+.location-page {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.location-info {
+  margin-top: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.location-info p {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.save-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
