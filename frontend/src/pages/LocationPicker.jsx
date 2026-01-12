@@ -76,7 +76,7 @@ const LocationPicker = () => {
     <div className="location-page">
       <h2>Select Delivery Location</h2>
 
-      <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
+      <LoadScript googleMapsApiKey="AIzaSyA-ME5cRzLIf4QMO9sCFx-ebdIfe_3cWe8">
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
